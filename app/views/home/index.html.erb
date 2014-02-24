@@ -1,0 +1,24 @@
+<h1>Home Page</h1>
+<h2>Some Links </h2>
+<%= "Signed in as #{current_user.email}" if current_user %>
+<ul>
+	<li>
+	<%= link_to("Home", {:controller => "home", :action => "index"})%>
+	</li>
+	<li>
+		<%= link_to("Find Professionals", {:controller => "pro", :action => "index"})%>
+	</li>
+	<li>
+		<%= link_to("Photos", {:controller => "photo", :action => "index"})%>
+	</li>
+	<li>
+		<%= link_to("My Account", {:controller => "user", :action => "index"})%>
+	</li>
+	<li>
+		<%= link_to("A Sample Professional Portfolio", {:controller => "portfolio", :action => "index"})%>
+	</li>
+	<li>
+		<%= link_to("Admin Page", {:controller => "admin", :action => "index"})%>
+	</li>
+</ul>
+

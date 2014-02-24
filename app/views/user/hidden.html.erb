@@ -1,0 +1,5 @@
+<h2><%= link_to "Home Page", root_path %></h2><br/>
+<p>This is only visible to signed_in users only. </p>
+<%= "You are signed in as #{current_user.email}" %>
+<br/>
+<%= link_to "Sign Out", destroy_user_session_path, :method => "DELETE"%>
